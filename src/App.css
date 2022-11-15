@@ -1,0 +1,340 @@
+html {
+  background-color: #F9F4F7  ;
+}
+.App {
+  text-align: center;
+  background-color: #F9F4F7  ;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+
+
+/*NavBar Css*/
+* {box-sizing: border-box;}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.saveButton{
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 18px 40px;
+  text-decoration: none;
+  font-size: 24px;
+  background-color: #addfad;
+  box-shadow: 3px 3px #E7BBDA;
+  border:none;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 30px
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #FFD7F3;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 25px 20px;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #FFB9EA;
+  color: white;
+}
+
+.topnav .search-container {
+  float: right;
+  margin-right: 20px;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+  height: 50px;
+  width: 420px;
+  margin-top: 17px;
+
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;
+  }
+}
+
+/*End of NavBar CSS*/
+
+/*MainMenu CSS*/
+.listBox {
+  background-color: #B1E6E2;
+  margin-top: 2%;
+  margin-left: 50px;
+  width: 40%;
+  height: 40%;
+  display: inline-block;
+  box-shadow: 5px 5px #D7D0D5;
+}
+.listBoxTitle{
+  background-color: #BEFAF6 ;
+}
+/*end of MainMenu CSS*/
+
+.territorContainer{
+  background-color: #F7FEFE;
+  width: 95%;
+  height: 220px;
+  margin-left: 10px;
+  margin-top: 15px;
+  border-radius: 10px;
+  box-shadow: 5px 5px #CED7D6;
+  text-align: center;
+}
+
+.territoryIdContainer{
+  background-color: #B5D8D5;
+  width: 150px;
+  height: 120px;
+
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 25px 20px;
+  text-decoration: none;
+  font-size: 36px;
+  border-radius: 10%;
+
+  margin-left: 20px;
+  margin-top: 30px;
+  box-shadow: 5px 5px #A2B1B0 ;
+}
+
+.territoryInfoContainer{
+  margin-top: 40px;
+  display: block;
+  background-color: #DFEFEE;
+}
+
+.veiwButton{
+  float: right;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px 60px;
+  text-decoration: none;
+  font-size: 24px;
+  background-color: #7CD7EF;
+  box-shadow: 3px 3px #74C5DA;
+  border:none;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 30px
+}
+
+.veiwButton:hover{
+  float: right;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px 60px;
+  text-decoration: none;
+  font-size: 24px;
+  background-color: #64B0C4;
+  box-shadow: 3px 3px #74C5DA;
+  border:none;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 30px
+}
+
+.nextPrevButton{
+  float: center;
+  width:240px;
+  height: 80px;
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 10px 60px;
+  text-decoration: none;
+  font-size: 32px;
+  background-color: #F6AEE1;
+  box-shadow: 3px 3px #74C5DA;
+  border:none;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  margin-left: 30px
+}
+
+.nextPrevButton:hover{
+  float: center;
+  width:240px;
+  height: 80px;
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 10px 60px;
+  text-decoration: none;
+  font-size: 32px;
+  background-color: #C589B3;
+  box-shadow: 3px 3px #74C5DA;
+  border:none;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  margin-left: 30px
+}
+
+.deleteButton{
+  float: right;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px 30px;
+  text-decoration: none;
+  font-size: 24px;
+  background-color: #FC7C7C;
+  box-shadow: 3px 3px #DD6C6C;
+  border:none;
+  margin-top: 5px;
+}
+
+.deleteButton:hover{
+  float: right;
+  display: block;
+  color: #DD6C6C;
+  text-align: center;
+  padding: 10px 30px;
+  text-decoration: none;
+  font-size: 24px;
+  background-color: #FC7C7C;
+  margin-top: 5px;
+}
+
+.scrollBox{
+  width: 100%;
+  height: 490px;
+  overflow-y:scroll;
+}
+
+.cardContainer {
+  background-color: #F7FEFE;
+  margin-top: 20px;
+  width: 750px;
+  height: 375px;
+  display: inline-block;
+  box-shadow: 5px 5px #D7D0D5;
+  border-radius: 5%;
+}
+.mapContainer {
+  background-color:#B5D8D5;
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 350px;
+  height: 350px;
+  display: inline-block;
+  box-shadow: 5px 5px #D7D0D5;
+  border-radius: 10%;
+  float: left;
+}
+
+.mapImage {
+  width:100%;
+  height: 100%;
+  border-radius: 10%;
+  border: 3px solid black;
+}
+
+.cardInfoContainer{
+  margin-top: 10px;
+  width: 350px;
+  height: 350px;
+  display: inline-block;
+  float:right;
+
+}
+
+.enterField{
+  width:400px;
+  height: 60px;
+  font-size: 24px;
+  margin-left: 40px;
+}
+
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
