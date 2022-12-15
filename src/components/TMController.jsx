@@ -44,7 +44,7 @@ class TMController extends Component{
         <Routes>
           <Route path="/" element={<MainMenu onAddTerritory={this.handleAddTerritory} onCurrentUpdate = {this.handleCurrentUpdate} onUpdateList = {this.handleListUpdate} tList = {this.state.t_list}/>}/>
           <Route exact path="/TerritoryView" element={<TerritoryView onAddTerritory={this.handleAddTerritory} onCurrentUpdate = {this.handleCurrentUpdate} current = {this.state.current} tList={this.state.t_list}/>}/>
-          <Route exact path="/ListView" element={<ListView onAddTerritory={this.handleAddTerritory} onCurrentUpdate = {this.handleCurrentUpdate} current = {this.state.current} tList={this.state.t_list}/>}/>
+          <Route exact path="/ListView" element={<ListView onUpdateList = {this.handleListUpdate} onAddTerritory={this.handleAddTerritory} onCurrentUpdate = {this.handleCurrentUpdate} current = {this.state.current} tList={this.state.t_list}/>}/>
           <Route exact path="/SearchView" element={<ListView onAddTerritory={this.handleAddTerritory} onCurrentUpdate = {this.handleCurrentUpdate} current = {this.state.current} tList={this.state.s_list}/>}/>
         </Routes>
       </Router>
