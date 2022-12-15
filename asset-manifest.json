@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/territory-manager/static/css/main.6d7f45c1.css",
+    "main.js": "/territory-manager/static/js/main.ec6931e7.js",
+    "static/js/787.ded7038e.chunk.js": "/territory-manager/static/js/787.ded7038e.chunk.js",
+    "index.html": "/territory-manager/index.html",
+    "main.6d7f45c1.css.map": "/territory-manager/static/css/main.6d7f45c1.css.map",
+    "main.ec6931e7.js.map": "/territory-manager/static/js/main.ec6931e7.js.map",
+    "787.ded7038e.chunk.js.map": "/territory-manager/static/js/787.ded7038e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6d7f45c1.css",
+    "static/js/main.ec6931e7.js"
+  ]
+}
