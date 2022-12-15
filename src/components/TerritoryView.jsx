@@ -27,12 +27,20 @@ class TerritoryView extends Component{
     let newTerr = this.state.tList;
     newTerr[this.state.current].publisher = newPub;
     newTerr[this.state.current].dateAssigned = d;
-    newTerr[this.state.current].record.push("Name: " + newPub + " dateAssigned: " + d);
+
     this.setState({newTerr});
   };
 
+  handleEdit = (newPub,newDate) =>{
+    let newTerr = this.state.tList;
+    newTerr[this.state.current].publisher = newPub;
+    newTerr[this.state.current].dateAssigned = newDate;
+    this.setState({newTerr});
+  }
+
   handleComplete = () =>{
     let newTerr = this.state.tList;
+    newTerr[this.state.current].record.push("Name: " + newTerr[this.state.current].publisher + " dateAssigned: " + newTerr[this.state.current].dateAssigned);
     newTerr[this.state.current].publisher = "No Publisher Assigned";
     newTerr[this.state.current].dateAssigned = "None";
     this.setState({newTerr});
@@ -43,7 +51,7 @@ class TerritoryView extends Component{
       <React.Fragment>
         <NavBar onCurrentUpdate = { this.props.onCurrentUpdate } onAddTerritory={this.props.onAddTerritory}/>
         <div style={{width:840}}className="listBox">
-          <TerritoryCard onComplete={this.handleComplete} isAssigned = {this.state.tList[this.state.current].publisher !== "No Publisher Assigned"} onChange ={this.handleChange} card={this.state.tList[this.state.current]} imrc="nothin"/>
+          <TerritoryCard onComplete={this.handleComplete} isAssigned = {this.state.tList[this.state.current].publisher !== "No Publisher Assigned"} onEdit={this.handleEdit} onChange ={this.handleChange} card={this.state.tList[this.state.current]} imrc="nothin"/>
           <button onClick={()=>this.prevCard()} className="nextPrevButton">Previous</button>
           <button onClick={()=>this.nextCard()} className="nextPrevButton">Next</button>
         </div>

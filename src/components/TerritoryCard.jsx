@@ -2,11 +2,15 @@ import React, {Component} from 'react';
 import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
 import Form from './Form';
+import Edit from './Edit';
+
 class TerritoryCard extends Component{
 
   render(){
     let button;
     let assignBtn = <Form onChange = {this.props.onChange}/>;
+    let editBtn;
+
     let completeBtn = (
       <Popup trigger={<button  className="veiwButton">Complete</button>} modal>
       {close => (
@@ -22,8 +26,10 @@ class TerritoryCard extends Component{
 
     if(this.props.isAssigned){
       button = completeBtn;
+      editBtn = <Edit card = {this.props.card} onEdit={this.props.onEdit}/>
     }else{
       button = assignBtn;
+      editBtn = null;
     }
 
     return(
@@ -46,6 +52,7 @@ class TerritoryCard extends Component{
           </Popup>
 
           {button}
+          {editBtn}
           </div>
         </div>
     );

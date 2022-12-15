@@ -1,17 +1,18 @@
 import React, {Component,useState} from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
-import {Link} from 'react-router-dom';
+
 
 function SearchBar(props){
   const [data, setData] = useState("");
+  const [contents,setContent] = useState(props.contents);
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    props.onCurrentUpdate(data);
+    props.onUpdateContent(contents.filter(item => item.tid === data || item.publisher === data));
   };
 
   return(
-    <div className="search-container">
+    <div style={{float:'left'}} className="search-container">
         <input className="enterField"
           type="text"
           value={data}
